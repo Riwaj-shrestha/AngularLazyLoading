@@ -1,0 +1,76 @@
+.btn{
+  padding: 15px 35px;
+  margin: 5px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+.btn-primary{
+  background-color: rgb(47, 135, 235);
+  color: beige;
+
+}
+.btn-primary:hover{
+  background-color: rgb(34, 112, 202);
+  color: beige;
+}
+.btn-primary:active{
+  background-color: rgb(47, 135, 235);
+  color: beige;
+  padding: 14px 34px;
+  margin: 6px;
+}
+
+.btn-gradient-primary{
+  background: linear-gradient(to right, rgb(103, 207, 255), rgb(8, 102, 209));
+  color: beige;
+  position: relative;
+  z-index: 1;
+  outline: none;
+
+}
+.btn-gradient-primary::before{
+  background: linear-gradient(to right, rgb(8, 102, 209), rgb(103, 207, 255));
+  position: absolute;
+  content: "";
+  color: beige;
+  top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: -1;
+transition: opacity 0.5s linear;
+opacity: 0;
+border-radius: 50px !important;
+
+
+}
+
+.btn-gradient-primary:hover::before{
+  opacity: 1;
+  border-radius: 50px !important;
+
+}
+
+.btn-gradient-primary:active::before{
+  background: linear-gradient(to bottom, rgb(8, 102, 209), rgb(103, 207, 255));;
+  border-radius: 50px !important;
+
+}
+
+.btn-danger{
+  background: rgb(255, 0, 0);
+  color: beige;
+  outline: none;
+}
+.btn-danger:hover{
+  background: rgb(224, 4, 4);
+}
+
+.btn-danger:active{
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(170, 16, 16));
+}
+.btn--round{
+  border-radius: 50px !important;
+}

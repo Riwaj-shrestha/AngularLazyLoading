@@ -1,0 +1,12 @@
+.card{
+  margin: 1vh;
+  padding: 1vh;
+}
+.img-box{
+  background: url(../../../assets/img/phone1.jpg);
+  background-size: contain;
+  height: 30vh;
+  width: 100%;
+  overflow: auto;
+  background-repeat: space;
+}

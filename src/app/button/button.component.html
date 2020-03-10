@@ -1,0 +1,23 @@
+<button
+  class="btn"
+  [class.btn-gradient-primary]="type==='gradient-primary'"
+  [class.btn-primary]="type==='primary'"
+  [class.btn-secondary]="type==='secondary'"
+  [class.btn-light]="type==='light'"
+  [class.btn-outline-light]="type==='outline-light'"
+  [class.btn-outline-primary]="type==='outline-primary'"
+  [class.btn-outline-secondary]="type==='outline-secondary'"
+  [class.btn-danger]="type==='danger'"
+  [class.btn-hover-secondary]="type==='hover-secondary'"
+  [class.btn-link]="type==='link'"
+  [class.btn--flat]="type==='flat'"
+  [class.btn--round]="type==='round'"
+  [ngClass]="'btn-' + size"
+  [class.btn-block]="block"
+  [class.btn--round]="round"
+  [class.btn--loading]="loading"
+  [class]="className"
+  [disabled]="disabled"
+>
+  <ng-content></ng-content>
+</button>

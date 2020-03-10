@@ -1,0 +1,10 @@
+.text-center{
+  text-align: center;
+  display: block;
+}
+.page-title{
+  padding: 1vh;
+}
+.svg {
+  font-size: 30px;
+}

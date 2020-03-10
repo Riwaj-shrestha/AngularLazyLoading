@@ -1,0 +1,54 @@
+<h2 style="text-align: center;">Planning</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <app-card>
+          <img src="assets/img/laptop.jpg" class="card-img-top">
+        Laptop
+        <a routerLink='laptop' class="btn btn-info"> Know More</a>
+        <a (click)="onProductSelected('Laptop')" routerLink='laptop' class="btn btn-success select-product"> Select Product</a>
+      </app-card>
+    </div>
+    <div class="col-md-3">
+      <app-card>
+          <img src="assets/img/phone1.jpg" class="card-img-top">
+        Mobile
+        <a routerLink='mobile' class="btn btn-info">Know More</a>
+        <a (click)="onProductSelected('Mobile')" routerLink='mobile' class="btn btn-success select-product"> Select Product</a>
+      </app-card>
+    </div>
+    <div class="col-md-3">
+      <app-card>
+          <img src="assets/img/calculator2.jpg" class="card-img-top">
+        Calculator
+        <a routerLink='calculator' class="btn btn-info"> Add to cart</a>
+        <a (click)="onProductSelected('Calculator')" class="btn btn-success select-product"> Select Product</a>
+      </app-card>
+    </div>
+    <div class="col-md-3">
+      <app-card>
+          <img src="assets/img/camera.jpg" class="card-img-top">
+        Camera
+        <a routerLink='camera' class="btn btn-info"> Add to cart</a>
+        <a (click)="onProductSelected('Camera')" class="btn btn-success select-product"> Select Product</a>
+      </app-card>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row" style="background-color: rgb(228, 228, 228); height: 45vh;">
+      <div class="col-md-6" >
+        <router-outlet></router-outlet>
+      </div>
+
+      <div class="col-md-6" >
+          <div class="select-item-box">
+            <div *ngIf="!productSelected"> Please select any product</div>
+            <div *ngIf="productSelected"> {{selectedProd}} is selected</div>
+            <button class="btn btn-default btn-lg">Add to cart</button>
+          </div>
+        </div>
+    </div>
+</div>
+
